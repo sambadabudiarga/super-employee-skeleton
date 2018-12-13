@@ -95,7 +95,7 @@
             src_js = document.createElement('script');
             src_js.id = 'page-js';
             src_js.type = 'text/javascript';
-            src_js.src = "js/" + pageContent + ".js";
+            src_js.src = "js/" + pageContent + ".js?_=" + (new Date().getTime());
 
             document.body.appendChild(src_js);
         }
